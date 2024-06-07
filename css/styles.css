@@ -26,6 +26,6 @@ body {
   z-index: 99;
 }
 
-video {
+.video video {
   width: 100%;
 }
