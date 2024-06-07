@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
 h2 {
   text-align: center;
 }
