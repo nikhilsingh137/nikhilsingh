@@ -329,8 +329,8 @@ button:hover {
   }
 
   .Icon {
-    bottom: 0;
-    top: 87%;
+    bottom: -37% !important;
+    top: 100%;
     display: flex;
     left: 0;
     justify-content: center;
@@ -413,8 +413,8 @@ button:hover {
   }
 
   .Icon {
-    bottom: 0;
-    top: 87%;
+    bottom: -37% !important;
+    top: 100%;
     display: flex;
     left: 0;
     justify-content: center;
