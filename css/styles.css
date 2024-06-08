@@ -11,7 +11,7 @@ body {
 
 .video {
   position: fixed;
-  top: 50%;
+  top: 0%;
   left: 50%;
   height: 100%;
   transform: translateX(-50%) translateY(-50%);
