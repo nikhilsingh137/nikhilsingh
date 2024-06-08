@@ -80,6 +80,10 @@ body {
   font-weight: 600;
 }
 
+.text h2 span {
+  color: #1fef08;
+}
+
 .Time {
   display: flex;
   margin-top: 40px;
