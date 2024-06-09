@@ -32,7 +32,11 @@
           <div id="Second"></div>
         </div>
         <div class="SearchBox">
-          <form action="https://api.web3forms.com/submit" method="POST">
+          <form
+            onsubmit="return myData()"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
             <div class="form">
               <input
                 type="hidden"
