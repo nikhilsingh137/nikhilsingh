@@ -39,3 +39,39 @@ function myData() {
     return true;
   }
 }
+
+document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const emailInput = document.getElementById("emailInput");
+  const email = emailInput.value;
+  const errorSpan = document.getElementById("error");
+
+  // Clear previous error
+  errorSpan.textContent = "";
+
+  // Basic email validation
+  if (!email || !email.match(/^\S+@\S+\.\S+$/)) {
+    errorSpan.textContent = "Please enter a valid email address";
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append("email", email);
+
+  fetch("submit.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      alert(data);
+      if (data.includes("successfully")) {
+        emailInput.value = ""; // Clear the input field
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("There was a problem submitting your data. Please try again.");
+    });
+});
